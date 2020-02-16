@@ -1,0 +1,182 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	/*font-family: Arial;/* helvetica, roboto, ubuntu */
+	padding: 10px;
+	background: #31B1E5;*/
+	
+}
+
+.topnav {
+	display: flex;
+	overflow: hidden;
+	margin-top: 15px;
+	background-color: #333;
+	border-radius: 11px;
+}
+
+.topnav a {
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+.topnav a:hover {
+	background-color: #ddd;
+	color: black;
+}
+
+#link-right {
+	/*position: absolute;
+	right: 20px;*/
+	margin-left: auto;
+}
+
+.header {
+	padding: 30px;
+	text-align: center;
+	background: white;
+}
+
+.header h1 {
+	font-size: 50px;
+}
+
+.slider {
+	width: 95%;
+	margin: auto;
+	overflow: hidden;
+}
+
+.slider ul {
+	display: flex;
+	padding: 0%;
+	width: 300%;
+
+	animation: cambio 20s infinite;
+	animation-timing-function: ease-in;
+}
+
+.slider li {
+	width: 100%;
+	list-style: none;
+}
+
+.slider img {
+	width: 100%;
+}
+
+@keyframes cambio {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+
+	50% {margin-left: -200%;}
+	100% {margin-left: -200%;}
+}
+
+.container {
+	max-width: 450px;
+	height: auto;
+	background-color: #EFEFEF;
+	margin: 5% auto;
+	padding-bottom: 1rem;
+}
+
+.form_top {
+	width: 100%;
+	text-align: center;
+	padding: 2 rem 0 1rem;
+	border-top: solid .4rem #F39B53;
+	margin-bottom: 1rem;	
+}
+
+.form_top h2 {
+	font-weight: bold;
+	color: #CAC8C8;
+	font-size: 18px;
+}
+
+h2 span {
+	color: #F39B53;
+}
+
+.form_reg {
+	padding: 0 2rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.btn_form {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 1rem;
+}
+
+
+.input:focus {
+	border-bottom: solid #F39B53 .2rem;
+}
+
+.btn_submit, .btn_reset {
+	width: 40%;
+	border-bottom: none;
+	background-color: #31B1E5;
+	color: white;
+}
+
+.btn_reset {
+	background-color: #EDA135;
+}
+
+.btn_submit:hover {
+	background-color: #4C9ED9;
+}
+
+.btn_reset:hover {
+	background-color: #FA9535;
+}
+
+
+
+.footer {
+	padding: 20px;
+	text-align: center;
+	background: #31B1E5;
+	margin-top: 20px;
+}
+
+.row {
+	display: flex;
+}
+
+.leftcolumn {
+	width: 75%;
+}
+
+.rightcolumn {
+	width: 25%;
+	background-color:#31B1E5;
+	padding-left: 20px;
+}
+
+.fakeimg {
+	background-color: #aaa;
+	width: 100%;
+	padding: 20px;
+}
+
+.card {
+	text-align: center;
+	background-color: white;
+	padding: 20px;
+	margin-top: 20px;
+	border-radius: 11px;
+}
